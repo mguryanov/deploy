@@ -45,6 +45,7 @@
 *.creator
 *.files
 *.includes
+*.autosave
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
