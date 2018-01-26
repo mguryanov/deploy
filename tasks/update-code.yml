@@ -12,8 +12,3 @@
   register: ansistrano_release_path
 
 - include: "update-code/{{ ansistrano_deploy_via | default('rsync') }}.yml"
-
-- name: ANSISTRANO | Copy release version into REVISION file
-  copy:
-    content: "{{ ansistrano_release_version }}"
-    dest: "{{ ansistrano_release_path.stdout }}/REVISION"
